@@ -1,0 +1,26 @@
+Write a function that takes an array of numbers and returns a new array with only the unique numbers (removing duplicates)
+
+// Write a function that takes an array of numbers and returns a new array with only the unique numbers (removing duplicates)
+
+
+
+
+let subject=[];
+let total=0;
+let sub=[];
+let n=Number(prompt("Please enter number of subjects:"));
+for (let i=0;i<n;i++){
+subject[i]=Number(prompt("Please enter number:"));
+}
+function removeDuplicates(arr) {
+    return subject.filter((item,
+        index) => subject.indexOf(item) === index);
+}
+    
+console.log(removeDuplicates(subject));
+
+
+
+output
+2 1 2 1 4
+[2,1,4]
