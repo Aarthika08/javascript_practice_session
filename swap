@@ -1,0 +1,14 @@
+swapping 2 variable without using third variable 
+
+let a=10
+let b=15
+console.log(a,b)
+a=a+b
+b=a-b 
+a=a-b 
+console.log(a,b)
+
+_____________________________________________________________________________________________________________________________________
+output
+10 15                                                      VM35:3
+15 10                                                      VM35:7
