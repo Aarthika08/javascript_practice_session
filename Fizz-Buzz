@@ -1,0 +1,25 @@
+
+
+let a =Number(prompt('Enter your 1st numbber '));
+// let b =Number(prompt('Enter your 2nd numbber '));
+if(a%3==0)
+{
+    if(a%5==0)
+    {
+        console.log("Fizz Buzz")
+    }
+    else
+    {
+        console.log("Fizz")
+    }
+}
+else
+{
+    console.log("Buzz")
+}
+
+__________________________________________________________________________________________________________________________________________
+output
+node /tmp/ZbQ3Hi4ISS.js
+Enter your 1st numbber 50
+Buzz
