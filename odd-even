@@ -1,0 +1,24 @@
+Create a function that takes an integer as an argument and returns 'even' if the number is even and 'odd' if it's odd.
+
+let first=Number(prompt("enter your first number"));
+let second=Number(prompt("enter your second number"));
+console.log(odd_even(first))
+console.log(odd_even(second))
+
+function odd_even(num)
+{
+    if(num % 2 == 0) {
+        console.log("The number is even."+num);
+    }
+    
+    // if the number is odd
+    else {
+        console.log("The number is odd."+num);
+    }
+    
+}
+
+_______________________________________________________________________________________________________________________________________
+output    
+The number is even.12                                                           VM88:3
+The number is odd.17                                                            VM88:4 
