@@ -20,3 +20,7 @@ for (const word of words){
 const inputString = "The quick brown fox jumps over the lazy dog";
 const result = longestWord(inputString);
 console.log(result); 
+
+__________________________________________________________________________________________________________
+output
+quick
