@@ -4,7 +4,7 @@ When positives and positives interact, they remain positive.
 When negatives and negatives interact, they remain negative.
 But when negatives and positives interact, they become neutral, and are shown as the number 0.
 Worked Example
-("+-+", "+--") ➞ "+-0"
+("+-+", "+--") ➞ "+-0" 
 # Compare the first characters of each string, then the next in turn.
 # "+" against a "+" returns another "+".
 # "-" against a "-" returns another "-".
