@@ -13,3 +13,9 @@ let t=numbers.split(' ')
  return `${value1} ${value2}`;
 
 }
+
+other answer
+let t=numbers.split(' ')
+ return `${Math.max(...t)} ${Math.min(...t)}`;
+
+}
