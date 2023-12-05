@@ -1,0 +1,54 @@
+
+Kata Training
+
+Home
+Report home for your next assignment
+TRAINING
+Practice
+Complete challenging Kata to earn honor and ranks. Re-train to hone technique
+Freestyle Sparring
+Take turns remixing and refactoring others code through Kumite
+COMMUNITY
+Leaderboards
+Achieve honor and move up the global leaderboards
+Chat
+Join our Discord server and chat with your fellow code warriors
+Discussions
+View our Github Discussions board to discuss general Codewars topics
+ABOUT
+Docs
+Learn about all of the different aspects of Codewars
+Aarthika08 Avatar
+7 kyu
+52
+Heads Up! Unlock the full potential of your account – confirm your email to enable the full dojo experience!
+
+7 kyu
+Smallest value of an array
+1172893% of 1,3265,980 of 11,892sanctusraphael7 Issues Reported
+ JavaScript
+Node v18.x
+VIM
+EMACS
+Instructions
+Output
+Write a function that can return the smallest value of an array or the index of that value. The function's 2nd parameter will tell whether it should return the value or the index.
+
+Assume the first parameter will always be an array filled with at least 1 number and no duplicates. Assume the second parameter will be a string holding one of two values: 'value' and 'index'.
+
+min([1,2,3,4,5], 'value') // => 1
+min([1,2,3,4,5], 'index') // => 0
+ARRAYSFUNDAMENTALS
+Ad
+Learn in Public: The community-based learning strategy that improves programming skills
+'Learn in Public': Growth hack your learning by stepping out into the public.
+
+Solution
+1
+function min(arr, toReturn) {
+2
+  if (toReturn==='value') return Math.min(...arr)
+3
+  return arr.indexOf(Math.min(...arr))
+4
+}
