@@ -1,0 +1,10 @@
+let a=[]
+let n='42145'
+  for (let i=0;i<n.length;i++)
+    {
+                 a[i]=n[i]
+}
+
+a.sort().reverse() 
+    console.log(a.join(""))
+    // console.log(a.join(""))
