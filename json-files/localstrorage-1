@@ -1,0 +1,31 @@
+// Store a name, userId in LocalStorage
+//         Retrieve the data from localStorage
+//         Convert userId string to number
+//         Short Syntax to get data from localStorage
+//         Remove an item from LocalStorage
+//         Remove all items from LocalStorage
+
+localStorage.setItem("name","abc");
+localStorage.setItem("userid","12");
+
+//         Retrieve the data from localStorage
+
+let firstname=localStorage.getItem("name");
+let useridd=localStorage.getItem("userid");
+console.log(firstname)
+console.log(useridd)
+
+//         Convert userId string to number
+let useridstring=parseInt(useridd);
+console.log(typeof(useridstring))
+
+//         Short Syntax to get data from localStorage
+
+let name1=localStorage.name;
+let id=localStorage.userid;
+
+//  Remove an item from LocalStorage
+
+localStorage.removeItem("name");
+
+localStorage.clear();
