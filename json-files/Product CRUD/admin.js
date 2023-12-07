@@ -6,7 +6,11 @@ function addProduct() {
     var productPrice = document.getElementById("productPrice").value;
     var productUrl = document.getElementById("productUrl").value;
     var productDescription = document.getElementById("productDescription").value;
-
+    //validation
+ if (!productName.trim() || !productPrice.trim() || !productUrl.trim()|| !productPrice.trim()) {
+        alert("Please fill in all required fields  before adding a product.");
+        return;
+    }
     // Create a new product element
     var productElement = document.createElement("div");
     productElement.innerHTML = "<p><strong>" + productName + "</strong>: $" + productPrice + "</p>";
