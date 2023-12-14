@@ -1,0 +1,19 @@
+let name=prompt('enter dept name');
+let dict={"ECE":["abc","edf","klo"],"ME":["klo","po"]};
+
+console.log("student,list",search(name));
+
+function search(name)
+{
+    for(let key  in dict)
+    {
+        if(name==key)
+        {
+            return dict[key];
+        }
+    }
+}
+
+output
+enter dept nameECE
+student,list [ 'abc', 'edf', 'klo' ]
