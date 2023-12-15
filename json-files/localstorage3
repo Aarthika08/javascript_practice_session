@@ -1,0 +1,61 @@
+// Create users array and store users data
+//         Store users in LocalStorage
+//         Retrieve users data and display user details
+//         Add an item to existing Users data in localStorage
+//         Search a user exists for the given inputEmailId
+//         Search based on multiple input fields
+//         Search the data, if not matched print "Invalid Credentials", else store the matched in localStorage
+
+
+// Create users array and store users data
+const users=[
+  { id: 1, name: 'John Doe', email: 'john@example.com', age: 25 },
+  { id: 2, name: 'Jane Doe', email: 'jane@example.com', age: 30 },
+];
+
+localStorage.setItem("users",JSON.stringify(users));
+
+let user1=JSON.parse(localStorage.getItem('users'))
+console.log(user1)
+
+const newuser={ id: 3, name: 'Dave', email: 'dave@example.com', age: 25 };
+user1.push(newuser);
+localStorage.setItem("users",JSON.stringify(user1));
+
+console.log(user1)
+
+let emailip="dave@example.com";
+let st=user1.find((users)=>users.email===emailip)
+if(st)
+{
+  console.log("success")
+}
+else{
+    console.log("not foud")
+
+}
+
+const searchip=(name,age)=>{
+  return user1.find((users)=>users.name===name && users.age===age)
+}
+let y=searchip('Dave',25)
+if(y)
+{
+  console.log("success")
+}
+else{
+    console.log("not foud")
+
+}
+const searc=(email)=>{
+  return user1.find((users)=>users.email===email)
+}
+let y1=searc('dave@example.com')
+if(y1)
+{
+  console.log("success")
+}
+else{
+    console.log("not foud")
+
+}
