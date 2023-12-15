@@ -2,7 +2,7 @@
 //         Store users in LocalStorage
 //         Retrieve users data and display user details
 //         Add an item to existing Users data in localStorage
-//         Search a user exists for the given inputEmailId
+//         Search a user exists for the given inputEmailId 
 //         Search based on multiple input fields
 //         Search the data, if not matched print "Invalid Credentials", else store the matched in localStorage
 
